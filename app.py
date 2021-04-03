@@ -89,7 +89,7 @@ class listenSpeedNet:
                     writer.writeheader()
                 writer.writerow({"Data": dt_now, "Download": self.speed_download, "Upload": self.speed_upload})
             else:
-                ds_text = dt_now + ', Donwload: ' + str(self.speed_download) + ' Mb, Upload: ' + str(self.speed_upload) + ' Mb'
+                ds_text = dt_now + ', Download: ' + str(self.speed_download) + ' Mb, Upload: ' + str(self.speed_upload) + ' Mb'
                 csv_file.write(ds_text + os.linesep)
 
 listen = listenSpeedNet()
